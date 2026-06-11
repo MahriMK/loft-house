@@ -1,0 +1,67 @@
+.cta {
+  max-height: 560px;
+  padding: 180px 0;
+  // background-image: url(./../image/apartments/best.jpeg);
+  // background-position: center center;
+
+  background: linear-gradient(
+      180deg,
+      $dark 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      $dark 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%),
+    url(./../../image/cta/Rectangle.jpg), #c4c4c4;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__content {
+    max-width: 540px;
+  }
+
+  &__content-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    gap: 35px 30px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .cta {
+    padding: 60px 0;
+    // margin-bottom: 60px;
+
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+
+    &__content-text {
+      font-size: 14px;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+    }
+  }
+}

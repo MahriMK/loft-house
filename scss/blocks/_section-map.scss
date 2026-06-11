@@ -1,0 +1,37 @@
+.section-map {
+  position: relative;
+  padding: 180px 0 90px;
+
+  &::before {
+    content: "V";
+
+    @include decorNumber;
+
+    top: 20%;
+
+    right: calc(50% + 555px);
+    transform: translate(50%, 0);
+  }
+
+  &__title {
+    margin-bottom: 88px;
+  }
+
+  // &__map {
+  // }
+}
+
+.map {
+  height: 358px;
+  background: #626262;
+}
+
+@media (max-width: $tablet) {
+  .section-map {
+    padding: 90px 0;
+
+    &__title {
+      margin-bottom: 44px;
+    }
+  }
+}

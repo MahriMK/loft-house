@@ -1,0 +1,28 @@
+.feedback {
+  padding: 90px 0 180px;
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    gap: 35px;
+    align-items: center;
+  }
+}
+
+@media (max-width: $tablet) {
+  .feedback {
+    padding: 50px 0 90px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+    }
+  }
+}

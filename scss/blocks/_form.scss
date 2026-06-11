@@ -1,0 +1,53 @@
+.form {
+  &__input {
+    padding: 12px;
+    cursor: pointer;
+    // width: 255px;
+    // height: 50px;
+
+    background-color: rgb(255, 255, 255, 0.2);
+
+    color: $white;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+
+    &::placeholder {
+      color: $form-text;
+      font-size: 14px;
+      line-height: 1.9;
+      text-align: center;
+    }
+  }
+
+  // &__input--name {
+  // }
+
+  // &__input--tel {
+  // }
+
+  &__privacy {
+    font-size: 13px;
+    color: #e7e7e7;
+    text-align: center;
+    line-height: 1.23;
+  }
+
+  &__btn {
+    background-color: $accent;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $white;
+    font-weight: 700;
+    // height: 50px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .form {
+    &__privacy--bottom {
+      grid-row: 4/5;
+    }
+  }
+}
